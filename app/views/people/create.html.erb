@@ -1,0 +1,19 @@
+<h1> Create New Person </h1>
+<%= form_for @people do |f| %>
+   <%= f.label :first_name %>
+  <%= f.text_field :first_name %>
+
+  <%= f.label :last_name %>
+  <%= f.text_field :last_name %>
+
+  <%= f.label :age %>
+  <%= f.text_area :age %>
+
+    <%= f.label :hair_color %>
+  <%= f.text_area :hair_color %>
+
+  <%= f.label :eye_color %>
+  <%= f.text_area :eye_color %>
+
+  <%= f.submit %>
+<% end %>
